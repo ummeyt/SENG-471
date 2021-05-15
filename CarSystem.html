@@ -1,0 +1,102 @@
+﻿<!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_dropdown-menu&stacked=h -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> CarSystem</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- drop down menu style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .carContainer {
+            position: relative;
+            left: 40px;
+            top: 4px;
+            display: inline-block;
+        }
+
+        .interiorColor {
+            position: relative;
+            left: 450px;
+            bottom: 30px;
+            display: inline-block;
+        }
+
+        .exteriorColor {
+            position: relative;
+            left: 860px;
+            bottom: 64px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="vw">VW</option>
+        <option value="audi" selected>Audi</option>
+    </select>
+
+        <option style="background-image:url(flags/usa.png);" value="US">USA</option>
+    -->
+    <!-- Dropdown for type of car -->
+    <div class="carContainer">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Car
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#"><img src="images/hatchback.jpg" /></a></li>
+                <li><a href="#"><img src="images/sedan.jpg" /></a></li>
+                <li><a href="#"><img src="images/minivan.jfif" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <br />
+
+    <!-- Dropdown for interior color of car -->
+    <div class="interiorColor">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Interior Color
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#"><img src="images/black_interior.jpg" /></a></li>
+                <li><a href="#"><img src="images/red_interior.jpg" /></a></li>
+                <li><a href="#"><img src="images/white_interior.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <br />
+
+    <!-- Dropdown for exterior color of car -->
+    <div class="exteriorColor">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Exterior Color
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#"><img src="images/black_exterior.jpg" /></a></li>
+                <li><a href="#"><img src="images/blue_exterior.jpg" /></a></li>
+                <li><a href="#"><img src="images/white_exterior.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
